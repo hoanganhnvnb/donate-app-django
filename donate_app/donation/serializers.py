@@ -8,3 +8,10 @@ class GetAllDonationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Donation
         fields = ('id', 'amount', 'paymenttype', 'upvotes', )
+
+
+class PostDonationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Donation
+        fields = ('amount', 'paymenttype', 'upvotes', )

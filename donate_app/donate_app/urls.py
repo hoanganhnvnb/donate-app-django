@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from donation.views import GetAllDonationAPIView
+from donation.views import GetAllDonationAPIView, PostDonationAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('getalldonation/', GetAllDonationAPIView.as_view()),
+    path('postdonation/', PostDonationAPIView.as_view()),
 ]

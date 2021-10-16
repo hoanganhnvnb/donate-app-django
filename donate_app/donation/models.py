@@ -6,4 +6,4 @@ from django.db.models.base import Model
 class Donation(models.Model):
     amount = models.IntegerField()
     paymenttype = models.CharField(max_length=255)
-    upvotes = models.IntegerField()
+    upvotes = models.IntegerField(default=0)
